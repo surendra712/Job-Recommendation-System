@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JobRinger - Find Your Dream Job</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <header class="header">
+        <nav class="nav-container">
+            <div class="logo">
+                <h1>JobRinger</h1>
+            </div>
+            <div class="nav-links">
+                <a href="#" class="active">Jobs</a>
+                <a href="#">Companies</a>
+                <a href="#">Resources</a>
+                <a href="#">About</a>
+            </div>
+            <div class="auth-buttons">
+                <button class="btn btn-outline">Sign In</button>
+                <button class="btn btn-primary">Post a Job</button>
+            </div>
+            <button class="mobile-menu-btn">
+                <i class="fas fa-bars"></i>
+            </button>
+        </nav>
+    </header>
+
+    <!-- Search Section -->
+    <section class="search-section">
+        <div class="search-container">
+            <h2>Find Your Dream Job</h2>
+            <div class="search-box">
+                <div class="search-input">
+                    <i class="fas fa-search"></i>
+                    <input type="text" placeholder="Job title, keywords, or company">
+                </div>
+                <div class="search-input">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <input type="text" placeholder="Location">
+                </div>
+                <button class="btn btn-primary search-btn">Search Jobs</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Filters Section -->
+    <section class="filters-section">
+        <div class="filters-container">
+            <div class="filter-group">
+                <label>Experience Level</label>
+                <select>
+                    <option>Any Level</option>
+                    <option>Entry Level</option>
+                    <option>Mid Level</option>
+                    <option>Senior Level</option>
+                </select>
+            </div>
+            <div class="filter-group">
+                <label>Job Type</label>
+                <select>
+                    <option>Any Type</option>
+                    <option>Full-time</option>
+                    <option>Part-time</option>
+                    <option>Contract</option>
+                    <option>Remote</option>
+                </select>
+            </div>
+            <div class="filter-group">
+                <label>Salary Range</label>
+                <select>
+                    <option>Any Salary</option>
+                    <option>$0 - $50k</option>
+                    <option>$50k - $100k</option>
+                    <option>$100k+</option>
+                </select>
+            </div>
+        </div>
+    </section>
+
+    <!-- Company Logos Section -->
+    <section class="company-logos">
+        <div class="company-logo-item">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/Google_2015_logo.svg/1200px-Google_2015_logo.svg.png" alt="Google">
+        </div>
+        <div class="company-logo-item">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/IBM_logo.svg/1200px-IBM_logo.svg.png" alt="IBM">
+        </div>
+        <div class="company-logo-item">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/96/Microsoft_logo_%282012%29.svg/1200px-Microsoft_logo_%282012%29.svg.png" alt="Microsoft">
+        </div>
+    </section>
+
+    <!-- Job Listings Section -->
+    <main class="job-listings">
+        <div class="listings-container">
+            <!-- Google Jobs -->
+            <article class="job-card">
+                <div class="company-logo">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/Google_2015_logo.svg/1200px-Google_2015_logo.svg.png" alt="Google Logo">
+                </div>
+                <div class="job-details">
+                    <h3>Senior Software Engineer</h3>
+                    <p class="company-name">Google</p>
+                    <div class="job-meta">
+                        <span><i class="fas fa-map-marker-alt"></i> Mountain View, CA</span>
+                        <span><i class="fas fa-briefcase"></i> Full-time</span>
+                        <span><i class="fas fa-dollar-sign"></i> 150k - 200k</span>
+                    </div>
+                    <div class="job-tags">
+                        <span>Python</span>
+                        <span>Cloud</span>
+                        <span>ML</span>
+                    </div>
+                </div>
+                <button class="btn btn-outline apply-btn">Apply Now</button>
+            </article>
+
+            <article class="job-card">
+                <div class="company-logo">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/Google_2015_logo.svg/1200px-Google_2015_logo.svg.png" alt="Google Logo">
+                </div>
+                <div class="job-details">
+                    <h3>Machine Learning Engineer</h3>
+                    <p class="company-name">Google</p>
+                    <div class="job-meta">
+                        <span><i class="fas fa-map-marker-alt"></i> New York, NY</span>
+                        <span><i class="fas fa-briefcase"></i> Full-time</span>
+                        <span><i class="fas fa-dollar-sign"></i> 160k - 220k</span>
+                    </div>
+                    <div class="job-tags">
+                        <span>TensorFlow</span>
+                        <span>Python</span>
+                        <span>Deep Learning</span>
+                    </div>
+                </div>
+                <button class="btn btn-outline apply-btn">Apply Now</button>
+            </article>
+
+            <!-- IBM Jobs -->
+            <article class="job-card">
+                <div class="company-logo">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/IBM_logo.svg/1200px-IBM_logo.svg.png" alt="IBM Logo">
+                </div>
+                <div class="job-details">
+                    <h3>Cloud Solutions Architect</h3>
+                    <p class="company-name">IBM</p>
+                    <div class="job-meta">
+                        <span><i class="fas fa-map-marker-alt"></i> New York, NY</span>
+                        <span><i class="fas fa-briefcase"></i> Full-time</span>
+                        <span><i class="fas fa-dollar-sign"></i> 130k - 180k</span>
+                    </div>
+                    <div class="job-tags">
+                        <span>AWS</span>
+                        <span>Azure</span>
+                        <span>DevOps</span>
+                    </div>
+                </div>
+                <button class="btn btn-outline apply-btn">Apply Now</button>
+            </article>
+
+            <article class="job-card">
+                <div class="company-logo">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/IBM_logo.svg/1200px-IBM_logo.svg.png" alt="IBM Logo">
+                </div>
+                <div class="job-details">
+                    <h3>AI Research Scientist</h3>
+                    <p class="company-name">IBM</p>
+                    <div class="job-meta">
+                        <span><i class="fas fa-map-marker-alt"></i> Cambridge, MA</span>
+                        <span><i class="fas fa-briefcase"></i> Full-time</span>
+                        <span><i class="fas fa-dollar-sign"></i> 140k - 190k</span>
+                    </div>
+                    <div class="job-tags">
+                        <span>AI</span>
+                        <span>Research</span>
+                        <span>Python</span>
+                    </div>
+                </div>
+                <button class="btn btn-outline apply-btn">Apply Now</button>
+            </article>
+
+            <!-- Microsoft Jobs -->
+            <article class="job-card">
+                <div class="company-logo">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/96/Microsoft_logo_%282012%29.svg/1200px-Microsoft_logo_%282012%29.svg.png" alt="Microsoft Logo">
+                </div>
+                <div class="job-details">
+                    <h3>Product Manager</h3>
+                    <p class="company-name">Microsoft</p>
+                    <div class="job-meta">
+                        <span><i class="fas fa-map-marker-alt"></i> Redmond, WA</span>
+                        <span><i class="fas fa-briefcase"></i> Full-time</span>
+                        <span><i class="fas fa-dollar-sign"></i> 120k - 160k</span>
+                    </div>
+                    <div class="job-tags">
+                        <span>Product Strategy</span>
+                        <span>Agile</span>
+                        <span>Azure</span>
+                    </div>
+                </div>
+                <button class="btn btn-outline apply-btn">Apply Now</button>
+            </article>
+
+            <article class="job-card">
+                <div class="company-logo">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/96/Microsoft_logo_%282012%29.svg/1200px-Microsoft_logo_%282012%29.svg.png" alt="Microsoft Logo">
+                </div>
+                <div class="job-details">
+                    <h3>Senior Software Engineer</h3>
+                    <p class="company-name">Microsoft</p>
+                    <div class="job-meta">
+                        <span><i class="fas fa-map-marker-alt"></i> Seattle, WA</span>
+                        <span><i class="fas fa-briefcase"></i> Full-time</span>
+                        <span><i class="fas fa-dollar-sign"></i> 140k - 190k</span>
+                    </div>
+                    <div class="job-tags">
+                        <span>C#</span>
+                        <span>.NET</span>
+                        <span>Azure</span>
+                    </div>
+                </div>
+                <button class="btn btn-outline apply-btn">Apply Now</button>
+            </article>
+        </div>
+    </main>
+
+    <!-- Pagination -->
+    <div class="pagination">
+        <button class="btn btn-outline"><i class="fas fa-chevron-left"></i></button>
+        <button class="btn btn-primary">1</button>
+        <button class="btn btn-outline">2</button>
+        <button class="btn btn-outline">3</button>
+        <button class="btn btn-outline"><i class="fas fa-chevron-right"></i></button>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-section">
+                <h4>JobRinger</h4>
+                <p>Find your dream job with us</p>
+            </div>
+            <div class="footer-section">
+                <h4>Quick Links</h4>
+                <a href="#">Browse Jobs</a>
+                <a href="#">Post a Job</a>
+                <a href="#">Career Resources</a>
+            </div>
+            <div class="footer-section">
+                <h4>Company</h4>
+                <a href="#">About Us</a>
+                <a href="#">Contact</a>
+                <a href="#">Privacy Policy</a>
+            </div>
+            <div class="footer-section">
+                <h4>Connect With Us</h4>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 JobRinger. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html> 
